@@ -1,4 +1,4 @@
-﻿{
+{
   "recipes": [
     {
       "ID": 1,
@@ -166,13 +166,13 @@
       "Name": "风力涡轮机",
       "Items": [
         1101,
-        1201,
-        1202
+        1202,
+        1201
       ],
       "ItemCounts": [
         6,
-        1,
-        3
+        3,
+        1
       ],
       "Results": [
         2203
@@ -335,12 +335,12 @@
       ],
       "Name": "无线输电塔",
       "Items": [
-        2201,
-        1401
+        1401,
+        2201
       ],
       "ItemCounts": [
-        1,
-        3
+        3,
+        1
       ],
       "Results": [
         2202
@@ -430,12 +430,12 @@
         2
       ],
       "Results": [
-        1120,
-        1114
+        1114,
+        1120
       ],
       "ResultCounts": [
-        1,
-        2
+        2,
+        1
       ],
       "TimeSpend": 240.0,
       "Proliferator": 3,
@@ -503,12 +503,12 @@
       ],
       "Name": "液氢燃料棒",
       "Items": [
-        1106,
-        1120
+        1120,
+        1106
       ],
       "ItemCounts": [
-        1,
-        10
+        10,
+        1
       ],
       "Results": [
         1801
@@ -531,12 +531,12 @@
       ],
       "Name": " - 推进器",
       "Items": [
-        1103,
-        1104
+        1104,
+        1103
       ],
       "ItemCounts": [
-        2,
-        3
+        3,
+        2
       ],
       "Results": [
         1405
@@ -643,13 +643,13 @@
       ],
       "Name": "硫酸",
       "Items": [
-        1114,
         1005,
+        1114,
         1000
       ],
       "ItemCounts": [
-        6,
         8,
+        6,
         4
       ],
       "Results": [
@@ -701,12 +701,12 @@
       ],
       "Name": "钛晶石",
       "Items": [
-        1117,
-        1106
+        1106,
+        1117
       ],
       "ItemCounts": [
-        1,
-        3
+        3,
+        1
       ],
       "Results": [
         1118
@@ -755,14 +755,14 @@
       ],
       "Name": "卡西米尔晶体",
       "Items": [
-        1118,
+        1120,
         1123,
-        1120
+        1118
       ],
       "ItemCounts": [
-        1,
+        12,
         2,
-        12
+        1
       ],
       "Results": [
         1126
@@ -785,14 +785,14 @@
       ],
       "Name": "卡西米尔晶体（高效）",
       "Items": [
+        1120,
         1014,
-        1123,
-        1120
+        1123
       ],
       "ItemCounts": [
+        12,
         8,
-        2,
-        12
+        2
       ],
       "Results": [
         1126
@@ -1027,12 +1027,12 @@
       ],
       "Name": "位面过滤器",
       "Items": [
-        1126,
-        1119
+        1119,
+        1126
       ],
       "ItemCounts": [
-        1,
-        2
+        2,
+        1
       ],
       "Results": [
         1304
@@ -1055,16 +1055,16 @@
       ],
       "Name": "微型粒子对撞机",
       "Items": [
+        1205,
         1107,
         1125,
-        1205,
         1123,
         1303
       ],
       "ItemCounts": [
-        20,
-        20,
         25,
+        20,
+        20,
         10,
         8
       ],
@@ -1112,13 +1112,13 @@
       ],
       "Name": "氘核燃料棒",
       "Items": [
-        1107,
         1121,
+        1107,
         1205
       ],
       "ItemCounts": [
-        1,
         20,
+        1,
         1
       ],
       "Results": [
@@ -1234,13 +1234,13 @@
       ],
       "Name": "制造台 Mk.I",
       "Items": [
-        1101,
         1201,
+        1101,
         1301
       ],
       "ItemCounts": [
-        4,
         8,
+        4,
         4
       ],
       "Results": [
@@ -1264,14 +1264,14 @@
       ],
       "Name": "制造台 Mk.II",
       "Items": [
-        2303,
         1123,
-        1303
+        1303,
+        2303
       ],
       "ItemCounts": [
-        1,
         8,
-        4
+        4,
+        1
       ],
       "Results": [
         2304
@@ -1294,14 +1294,14 @@
       ],
       "Name": "制造台 Mk.III",
       "Items": [
-        2304,
         1402,
-        1305
+        1305,
+        2304
       ],
       "ItemCounts": [
-        1,
         8,
-        2
+        2,
+        1
       ],
       "Results": [
         2305
@@ -1500,13 +1500,13 @@
       ],
       "Name": "有机晶体（原始）",
       "Items": [
-        1030,
         1031,
+        1030,
         1000
       ],
       "ItemCounts": [
-        20,
         30,
+        20,
         10
       ],
       "Results": [
@@ -1557,14 +1557,14 @@
       "Name": "电弧熔炉",
       "Items": [
         1101,
-        1108,
         1301,
+        1108,
         1202
       ],
       "ItemCounts": [
         4,
-        2,
         4,
+        2,
         2
       ],
       "Results": [
@@ -1610,12 +1610,12 @@
       ],
       "Name": "X射线裂解",
       "Items": [
-        1114,
-        1120
+        1120,
+        1114
       ],
       "ItemCounts": [
-        1,
-        2
+        2,
+        1
       ],
       "Results": [
         1120,
@@ -1822,14 +1822,14 @@
       ],
       "Name": "钛合金",
       "Items": [
+        1116,
         1106,
-        1103,
-        1116
+        1103
       ],
       "ItemCounts": [
+        8,
         4,
-        4,
-        8
+        4
       ],
       "Results": [
         1107
@@ -1968,14 +1968,14 @@
       "Items": [
         1103,
         1201,
-        1303,
-        1205
+        1205,
+        1303
       ],
       "ItemCounts": [
         20,
         20,
-        5,
-        10
+        10,
+        5
       ],
       "Results": [
         2311
@@ -2000,16 +2000,16 @@
       "Items": [
         1103,
         1105,
+        1205,
         1404,
-        1303,
-        1205
+        1303
       ],
       "ItemCounts": [
         20,
         20,
+        20,
         10,
-        5,
-        20
+        5
       ],
       "Results": [
         2208
@@ -2032,14 +2032,14 @@
       ],
       "Name": "卫星配电站",
       "Items": [
-        2202,
         1205,
-        1125
+        1125,
+        2202
       ],
       "ItemCounts": [
-        1,
         10,
-        2
+        2,
+        1
       ],
       "Results": [
         2212
@@ -2122,13 +2122,13 @@
       "Name": "蓄电器",
       "Items": [
         1101,
-        1205,
-        1113
+        1113,
+        1205
       ],
       "ItemCounts": [
         6,
-        1,
-        3
+        3,
+        1
       ],
       "Results": [
         2206
@@ -2327,13 +2327,13 @@
       ],
       "Name": "小型运载火箭",
       "Items": [
-        1502,
         1802,
+        1502,
         1305
       ],
       "ItemCounts": [
-        2,
         4,
+        2,
         2
       ],
       "Results": [
@@ -2675,14 +2675,14 @@
       ],
       "Name": "星际物流运输站",
       "Items": [
-        2103,
         1107,
-        1206
+        1206,
+        2103
       ],
       "ItemCounts": [
-        1,
         40,
-        20
+        20,
+        1
       ],
       "Results": [
         2104
@@ -2905,13 +2905,13 @@
       ],
       "Name": "超级磁场环",
       "Items": [
-        1204,
         1102,
+        1204,
         1109
       ],
       "ItemCounts": [
-        2,
         3,
+        2,
         1
       ],
       "Results": [
@@ -2932,14 +2932,14 @@
       ],
       "Name": "奇异物质",
       "Items": [
+        1121,
         1206,
-        1101,
-        1121
+        1101
       ],
       "ItemCounts": [
+        10,
         2,
-        2,
-        10
+        2
       ],
       "Results": [
         1127
@@ -3108,16 +3108,16 @@
       ],
       "Name": "轨道采集器",
       "Items": [
-        2104,
         1205,
         1406,
-        2207
+        2207,
+        2104
       ],
       "ItemCounts": [
-        1,
         50,
         20,
-        20
+        20,
+        1
       ],
       "Results": [
         2105
@@ -3253,16 +3253,16 @@
       ],
       "Name": "位面熔炉",
       "Items": [
-        2302,
+        1016,
         1125,
         1304,
-        1016
+        2302
       ],
       "ItemCounts": [
-        1,
+        15,
         5,
         4,
-        15
+        1
       ],
       "Results": [
         2315
@@ -3287,14 +3287,14 @@
       "Items": [
         1101,
         1201,
-        1110,
-        1301
+        1301,
+        1110
       ],
       "ItemCounts": [
         3,
         2,
-        1,
-        2
+        2,
+        1
       ],
       "Results": [
         2030
@@ -3317,14 +3317,14 @@
       ],
       "Name": "地热发电站",
       "Items": [
-        1103,
         1104,
+        1103,
         1404,
         1205
       ],
       "ItemCounts": [
-        15,
         20,
+        15,
         4,
         1
       ],
@@ -3349,18 +3349,18 @@
       ],
       "Name": "大型采矿机",
       "Items": [
+        1014,
         1107,
         1125,
         1205,
-        1305,
-        1014
+        1305
       ],
       "ItemCounts": [
+        40,
         20,
         10,
         10,
-        4,
-        40
+        4
       ],
       "Results": [
         2316
@@ -3383,16 +3383,16 @@
       ],
       "Name": "自动集装机",
       "Items": [
-        1103,
         1201,
-        1205,
-        1303
+        1103,
+        1303,
+        1205
       ],
       "ItemCounts": [
-        3,
         4,
-        1,
-        2
+        3,
+        2,
+        1
       ],
       "Results": [
         2040
@@ -3502,16 +3502,16 @@
       ],
       "Name": "量子化工厂",
       "Items": [
-        2309,
         1119,
         1127,
-        1305
+        1305,
+        2309
       ],
       "ItemCounts": [
-        1,
         10,
         3,
-        3
+        3,
+        1
       ],
       "Results": [
         2317
@@ -3536,14 +3536,14 @@
       "Items": [
         1101,
         1201,
-        1301,
-        1202
+        1202,
+        1301
       ],
       "ItemCounts": [
         8,
         8,
-        2,
-        4
+        4,
+        2
       ],
       "Results": [
         3001
@@ -3567,15 +3567,15 @@
       "Name": "高频激光塔",
       "Items": [
         1103,
+        1404,
         1401,
-        1301,
-        1404
+        1301
       ],
       "ItemCounts": [
         9,
+        9,
         6,
-        6,
-        9
+        6
       ],
       "Results": [
         3002
@@ -3599,14 +3599,14 @@
       "Name": "聚爆加农炮",
       "Items": [
         1103,
-        1203,
         1301,
+        1203,
         1205
       ],
       "ItemCounts": [
         10,
-        8,
         10,
+        8,
         2
       ],
       "Results": [
@@ -3664,15 +3664,15 @@
       ],
       "Name": "导弹防御塔",
       "Items": [
+        1301,
         1103,
         1203,
-        1301,
         1407
       ],
       "ItemCounts": [
+        12,
         8,
         6,
-        12,
         6
       ],
       "Results": [
@@ -3728,14 +3728,14 @@
       ],
       "Name": "信号塔",
       "Items": [
-        2202,
         1103,
-        1113
+        1113,
+        2202
       ],
       "ItemCounts": [
-        2,
         12,
-        6
+        6,
+        2
       ],
       "Results": [
         3007
@@ -3843,13 +3843,13 @@
       "Name": "晶石爆破单元",
       "Items": [
         1129,
-        1126,
-        1113
+        1113,
+        1126
       ],
       "ItemCounts": [
         8,
-        1,
-        8
+        8,
+        1
       ],
       "Results": [
         1130
@@ -3898,12 +3898,12 @@
       ],
       "Name": "钛化弹箱",
       "Items": [
-        1601,
-        1106
+        1106,
+        1601
       ],
       "ItemCounts": [
-        1,
-        2
+        2,
+        1
       ],
       "Results": [
         1602
@@ -3982,14 +3982,14 @@
       ],
       "Name": "高爆炮弹组",
       "Items": [
-        1604,
         1106,
-        1129
+        1129,
+        1604
       ],
       "ItemCounts": [
-        1,
         6,
-        2
+        2,
+        1
       ],
       "Results": [
         1605
@@ -4012,14 +4012,14 @@
       ],
       "Name": "晶石炮弹组",
       "Items": [
-        1605,
         1107,
-        1130
+        1130,
+        1605
       ],
       "ItemCounts": [
-        1,
         3,
-        2
+        2,
+        1
       ],
       "Results": [
         1606
@@ -4042,14 +4042,14 @@
       ],
       "Name": "等离子胶囊",
       "Items": [
-        1123,
+        1121,
         1102,
-        1121
+        1123
       ],
       "ItemCounts": [
-        1,
+        10,
         2,
-        10
+        1
       ],
       "Results": [
         1607
@@ -4072,16 +4072,16 @@
       ],
       "Name": "反物质胶囊",
       "Items": [
-        1607,
-        1206,
         1120,
-        1122
+        1122,
+        1607,
+        1206
       ],
       "ItemCounts": [
-        1,
-        1,
         10,
-        10
+        10,
+        1,
+        1
       ],
       "Results": [
         1608
@@ -4136,15 +4136,15 @@
       ],
       "Name": "超音速导弹组",
       "Items": [
-        1609,
         1303,
         1129,
+        1609,
         1405
       ],
       "ItemCounts": [
+        4,
+        4,
         2,
-        4,
-        4,
         2
       ],
       "Results": [
@@ -4168,13 +4168,13 @@
       ],
       "Name": "引力导弹组",
       "Items": [
-        1610,
         1130,
+        1610,
         1127
       ],
       "ItemCounts": [
-        3,
         6,
+        3,
         3
       ],
       "Results": [
@@ -4199,14 +4199,14 @@
       "Name": "原型机",
       "Items": [
         1101,
-        1407,
         1301,
+        1407,
         1401
       ],
       "ItemCounts": [
         3,
-        1,
         2,
+        1,
         1
       ],
       "Results": [
@@ -4230,16 +4230,16 @@
       ],
       "Name": "精准无人机",
       "Items": [
-        5101,
-        1204,
         1301,
-        1404
+        1404,
+        5101,
+        1204
       ],
       "ItemCounts": [
-        1,
-        1,
         2,
-        2
+        2,
+        1,
+        1
       ],
       "Results": [
         5102
@@ -4295,15 +4295,15 @@
       "Name": "护卫舰",
       "Items": [
         1107,
-        1406,
+        1206,
         1303,
-        1206
+        1406
       ],
       "ItemCounts": [
         5,
-        1,
+        3,
         2,
-        3
+        1
       ],
       "Results": [
         5111
@@ -4358,12 +4358,12 @@
       ],
       "Name": "动力引擎",
       "Items": [
-        1202,
-        1104
+        1104,
+        1202
       ],
       "ItemCounts": [
-        1,
-        2
+        2,
+        1
       ],
       "Results": [
         1407
@@ -4386,16 +4386,16 @@
       ],
       "Name": "战场分析基站",
       "Items": [
-        1103,
         1301,
-        1302,
-        1407
+        1103,
+        1407,
+        1302
       ],
       "ItemCounts": [
-        12,
         18,
-        6,
-        12
+        12,
+        12,
+        6
       ],
       "Results": [
         3009
@@ -4418,16 +4418,16 @@
       ],
       "Name": "自演化研究站",
       "Items": [
-        2901,
-        5202,
         5201,
-        1305
+        5202,
+        1305,
+        2901
       ],
       "ItemCounts": [
-        1,
-        10,
         20,
-        4
+        10,
+        4,
+        1
       ],
       "Results": [
         2902
@@ -4450,16 +4450,16 @@
       ],
       "Name": "重组式制造台",
       "Items": [
-        2305,
-        5203,
         5206,
-        1305
+        5203,
+        1305,
+        2305
       ],
       "ItemCounts": [
-        1,
-        10,
         30,
-        4
+        10,
+        4,
+        1
       ],
       "Results": [
         2318
@@ -4482,16 +4482,16 @@
       ],
       "Name": "负熵熔炉",
       "Items": [
-        2315,
-        5204,
         5206,
-        1305
+        5204,
+        1305,
+        2315
       ],
       "ItemCounts": [
-        1,
-        10,
         30,
-        4
+        10,
+        4,
+        1
       ],
       "Results": [
         2319
@@ -4515,14 +4515,14 @@
       "Name": "奇异湮灭燃料棒",
       "Items": [
         1803,
-        5205,
         1127,
+        5205,
         1125
       ],
       "ItemCounts": [
         8,
-        1,
         2,
+        1,
         1
       ],
       "Results": [
@@ -4578,14 +4578,14 @@
       ],
       "Name": "干扰胶囊",
       "Items": [
+        1120,
         1204,
-        1401,
-        1120
+        1401
       ],
       "ItemCounts": [
+        3,
         1,
-        1,
-        3
+        1
       ],
       "Results": [
         1612
@@ -4609,13 +4609,13 @@
       "Name": "压制胶囊",
       "Items": [
         1612,
-        1205,
-        1119
+        1119,
+        1205
       ],
       "ItemCounts": [
         2,
-        1,
-        2
+        2,
+        1
       ],
       "Results": [
         1613
@@ -4927,13 +4927,13 @@
       "Name": "物质解压器运载火箭",
       "Items": [
         9482,
-        9484,
-        1802
+        1802,
+        9484
       ],
       "ItemCounts": [
         2,
-        1,
-        2
+        2,
+        1
       ],
       "Results": [
         9488
@@ -4957,13 +4957,13 @@
       "Name": "科学枢纽运载火箭",
       "Items": [
         9481,
-        9486,
-        1802
+        1802,
+        9486
       ],
       "ItemCounts": [
         3,
-        1,
-        2
+        2,
+        1
       ],
       "Results": [
         9489
@@ -4986,14 +4986,14 @@
       ],
       "Name": "谐振发射器运载火箭",
       "Items": [
-        9480,
         9484,
-        1802
+        1802,
+        9480
       ],
       "ItemCounts": [
-        1,
         4,
-        2
+        2,
+        1
       ],
       "Results": [
         9490
@@ -5044,14 +5044,14 @@
       ],
       "Name": "晶体重构器运载火箭",
       "Items": [
-        9485,
         1802,
-        1305
+        1305,
+        9485
       ],
       "ItemCounts": [
-        1,
         2,
-        2
+        2,
+        1
       ],
       "Results": [
         9492
@@ -5074,12 +5074,12 @@
       ],
       "Name": "力场发生器Recipe",
       "Items": [
-        9480,
-        9484
+        9484,
+        9480
       ],
       "ItemCounts": [
-        1,
-        2
+        2,
+        1
       ],
       "Results": [
         9503
@@ -5103,13 +5103,13 @@
       "Name": "导流框架Recipe",
       "Items": [
         1125,
-        9481,
-        9503
+        9503,
+        9481
       ],
       "ItemCounts": [
         3,
-        2,
-        3
+        3,
+        2
       ],
       "Results": [
         9508
@@ -5350,18 +5350,18 @@
       ],
       "Name": "增产分馏塔",
       "Items": [
+        5203,
         1107,
         1402,
         1304,
-        1305,
-        5203
+        1305
       ],
       "ItemCounts": [
+        30,
         16,
         8,
         4,
-        1,
-        30
+        1
       ],
       "Results": [
         2326
@@ -5494,12 +5494,12 @@
         5
       ],
       "Results": [
-        2104,
-        5002
+        5002,
+        2104
       ],
       "ResultCounts": [
-        1,
-        10
+        10,
+        1
       ],
       "TimeSpend": 6.0,
       "Proliferator": 1,
@@ -5548,12 +5548,12 @@
         3
       ],
       "Results": [
-        2103,
-        5001
+        5001,
+        2103
       ],
       "ResultCounts": [
-        1,
-        30
+        30,
+        1
       ],
       "TimeSpend": 6.0,
       "Proliferator": 1,
@@ -5628,12 +5628,12 @@
         2
       ],
       "Results": [
-        2307,
-        2308
+        2308,
+        2307
       ],
       "ResultCounts": [
-        1,
-        4
+        4,
+        1
       ],
       "TimeSpend": 6.0,
       "Proliferator": 1,
@@ -6837,7 +6837,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 8010.6809078771694,
+      "TimeSpend": 8010.680907877169,
       "Proliferator": 1,
       "IconName": "hydrogen-energy-fuel-deuterium-energy-fuel-formula-v2"
     },
@@ -6883,7 +6883,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 8010.6809078771694,
+      "TimeSpend": 8010.680907877169,
       "Proliferator": 1,
       "IconName": "deuterium-energy-fuel-antimatter-energy-fuel-formula-v2"
     },
@@ -6929,7 +6929,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 8010.6809078771694,
+      "TimeSpend": 8010.680907877169,
       "Proliferator": 1,
       "IconName": "antimatter-energy-fuel-virtual-energy-fuel-formula-v2"
     },
@@ -7550,7 +7550,7 @@
       "ResultCounts": [
         1
       ],
-      "TimeSpend": 6006.0060060060059,
+      "TimeSpend": 6006.006006006006,
       "Proliferator": 1,
       "IconName": "accumulator-full-energy-exchanger-formula-v2"
     },
@@ -7688,7 +7688,7 @@
       "ResultCounts": [
         1
       ],
-      "TimeSpend": 6006.0060060060059,
+      "TimeSpend": 6006.006006006006,
       "Proliferator": 1,
       "IconName": "fusion-power-station-fusion-reactor-formula-v2"
     },
@@ -8240,7 +8240,7 @@
       "ResultCounts": [
         1
       ],
-      "TimeSpend": 6006.0060060060059,
+      "TimeSpend": 6006.006006006006,
       "Proliferator": 1,
       "IconName": "water-pump-oil-extractor-formula-v2"
     },
@@ -8263,7 +8263,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 8010.6809078771694,
+      "TimeSpend": 8010.680907877169,
       "Proliferator": 1,
       "IconName": "water-pump-oil-extractor-formula-v2"
     },
@@ -8355,7 +8355,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 8010.6809078771694,
+      "TimeSpend": 8010.680907877169,
       "Proliferator": 1,
       "IconName": "chemical-plant-chemical-plant-2-formula-v2"
     },
@@ -8378,7 +8378,7 @@
       "ResultCounts": [
         1
       ],
-      "TimeSpend": 6006.0060060060059,
+      "TimeSpend": 6006.006006006006,
       "Proliferator": 1,
       "IconName": "fractionator-hadron-collider-formula-v2"
     },
@@ -8401,7 +8401,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 8010.6809078771694,
+      "TimeSpend": 8010.680907877169,
       "Proliferator": 1,
       "IconName": "fractionator-hadron-collider-formula-v2"
     },
@@ -8700,7 +8700,7 @@
       "ResultCounts": [
         1
       ],
-      "TimeSpend": 6006.0060060060059,
+      "TimeSpend": 6006.006006006006,
       "Proliferator": 1,
       "IconName": "em-rail-ejector-ray-receiver-formula-v2"
     },
@@ -8723,7 +8723,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 8010.6809078771694,
+      "TimeSpend": 8010.680907877169,
       "Proliferator": 1,
       "IconName": "em-rail-ejector-ray-receiver-formula-v2"
     },
@@ -8930,7 +8930,7 @@
       "ResultCounts": [
         1
       ],
-      "TimeSpend": 6006.0060060060059,
+      "TimeSpend": 6006.006006006006,
       "Proliferator": 1,
       "IconName": "turret-plasma-turret-plasma-ground-formula-v2"
     },
@@ -8976,7 +8976,7 @@
       "ResultCounts": [
         1
       ],
-      "TimeSpend": 6006.0060060060059,
+      "TimeSpend": 6006.006006006006,
       "Proliferator": 1,
       "IconName": "battle-base-turret-signal-formula-v2"
     },
@@ -9068,7 +9068,7 @@
       "ResultCounts": [
         1
       ],
-      "TimeSpend": 6006.0060060060059,
+      "TimeSpend": 6006.006006006006,
       "Proliferator": 1,
       "IconName": "turret-disturb-turret-shield-formula-v2"
     },
@@ -9137,7 +9137,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 8010.6809078771694,
+      "TimeSpend": 8010.680907877169,
       "Proliferator": 1,
       "IconName": "fractionator-1-fractionator-2-formula-v2"
     },
@@ -9183,7 +9183,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 8010.6809078771694,
+      "TimeSpend": 8010.680907877169,
       "Proliferator": 1,
       "IconName": "fractionator-2-fractionator-3-formula-v2"
     },
@@ -9229,7 +9229,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 8010.6809078771694,
+      "TimeSpend": 8010.680907877169,
       "Proliferator": 1,
       "IconName": "fractionator-3-fractionator-4-formula-v2"
     },
@@ -9275,7 +9275,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 8010.6809078771694,
+      "TimeSpend": 8010.680907877169,
       "Proliferator": 1,
       "IconName": "fractionator-4-fractionator-5-formula-v2"
     },
@@ -9321,7 +9321,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 8010.6809078771694,
+      "TimeSpend": 8010.680907877169,
       "Proliferator": 1,
       "IconName": "fractionator-5-fractionator-6-formula-v2"
     },
@@ -9870,7 +9870,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 857.14285349359318,
+      "TimeSpend": 857.1428534935932,
       "Proliferator": 8,
       "IconName": "gas-hydrate"
     },
@@ -9936,7 +9936,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 857.14285349359318,
+      "TimeSpend": 857.1428534935932,
       "Proliferator": 8,
       "IconName": "diamond-ore"
     },
@@ -10002,7 +10002,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 857.14285349359318,
+      "TimeSpend": 857.1428534935932,
       "Proliferator": 8,
       "IconName": "fractal-silica"
     },
@@ -10080,7 +10080,7 @@
         1209
       ],
       "ItemCounts": [
-        0.0083333333333333332
+        0.008333333333333333
       ],
       "Results": [
         1014
@@ -10111,7 +10111,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 857.14285349359318,
+      "TimeSpend": 857.1428534935932,
       "Proliferator": 8,
       "IconName": "grating-ore"
     },
@@ -10177,7 +10177,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 857.14285349359318,
+      "TimeSpend": 857.1428534935932,
       "Proliferator": 8,
       "IconName": "bamboo-crystal"
     },
@@ -10255,7 +10255,7 @@
         1209
       ],
       "ItemCounts": [
-        0.0083333333333333332
+        0.008333333333333333
       ],
       "Results": [
         1016
@@ -10286,7 +10286,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 857.14285349359318,
+      "TimeSpend": 857.1428534935932,
       "Proliferator": 8,
       "IconName": "mono-mag-ore"
     },
@@ -10339,7 +10339,7 @@
         1209
       ],
       "ItemCounts": [
-        0.0083333333333333332
+        0.008333333333333333
       ],
       "Results": [
         1101
@@ -10370,7 +10370,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 764.16284691063072,
+      "TimeSpend": 764.1628469106307,
       "Proliferator": 8,
       "IconName": "iron-plate"
     },
@@ -10423,7 +10423,7 @@
         1209
       ],
       "ItemCounts": [
-        0.0083333333333333332
+        0.008333333333333333
       ],
       "Results": [
         1104
@@ -10454,7 +10454,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 764.16284691063072,
+      "TimeSpend": 764.1628469106307,
       "Proliferator": 8,
       "IconName": "copper-plate"
     },
@@ -10507,7 +10507,7 @@
         1209
       ],
       "ItemCounts": [
-        0.0083333333333333332
+        0.008333333333333333
       ],
       "Results": [
         1105
@@ -10591,7 +10591,7 @@
         1209
       ],
       "ItemCounts": [
-        0.0083333333333333332
+        0.008333333333333333
       ],
       "Results": [
         1106
@@ -10664,7 +10664,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 764.16284691063072,
+      "TimeSpend": 764.1628469106307,
       "Proliferator": 8,
       "IconName": "stone-brick"
     },
@@ -10717,7 +10717,7 @@
         1209
       ],
       "ItemCounts": [
-        0.0083333333333333332
+        0.008333333333333333
       ],
       "Results": [
         1109
@@ -10790,7 +10790,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 1584.4063382835229,
+      "TimeSpend": 1584.406338283523,
       "Proliferator": 8,
       "IconName": "steel-plate"
     },
@@ -10916,7 +10916,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 2002.1163841213761,
+      "TimeSpend": 2002.116384121376,
       "Proliferator": 8,
       "IconName": "titan-glass"
     },
@@ -11000,7 +11000,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 834.81525051204983,
+      "TimeSpend": 834.8152505120498,
       "Proliferator": 8,
       "IconName": "diamond"
     },
@@ -11042,7 +11042,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 834.81525051204983,
+      "TimeSpend": 834.8152505120498,
       "Proliferator": 8,
       "IconName": "silicium-high-purity"
     },
@@ -11084,7 +11084,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 900.22853528620908,
+      "TimeSpend": 900.2285352862091,
       "Proliferator": 8,
       "IconName": "gear-wheel"
     },
@@ -11126,7 +11126,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 834.81525051204983,
+      "TimeSpend": 834.8152505120498,
       "Proliferator": 8,
       "IconName": "magnet"
     },
@@ -11210,7 +11210,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 1951.9936920051971,
+      "TimeSpend": 1951.993692005197,
       "Proliferator": 8,
       "IconName": "electric-motor"
     },
@@ -11294,7 +11294,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 5175.2492464803818,
+      "TimeSpend": 5175.249246480382,
       "Proliferator": 8,
       "IconName": "hyper-magnetism-ring"
     },
@@ -11378,7 +11378,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 5309.0946237436383,
+      "TimeSpend": 5309.094623743638,
       "Proliferator": 8,
       "IconName": "strange-matter-generator"
     },
@@ -12129,7 +12129,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 4065.6879726536308,
+      "TimeSpend": 4065.687972653631,
       "Proliferator": 8,
       "IconName": "anti-matter"
     },
@@ -12163,7 +12163,7 @@
         1209
       ],
       "ItemCounts": [
-        0.0083333333333333332
+        0.008333333333333333
       ],
       "Results": [
         1208
@@ -12194,7 +12194,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 5720.4515839223059,
+      "TimeSpend": 5720.451583922306,
       "Proliferator": 8,
       "IconName": "photon-capacitor-full"
     },
@@ -12278,7 +12278,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 4917.2277111647672,
+      "TimeSpend": 4917.227711164767,
       "Proliferator": 8,
       "IconName": "deuterium-energy-fuel"
     },
@@ -12427,7 +12427,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 967.35583427894937,
+      "TimeSpend": 967.3558342789494,
       "Proliferator": 8,
       "IconName": "graphene"
     },
@@ -12535,7 +12535,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 857.14285349359318,
+      "TimeSpend": 857.1428534935932,
       "Proliferator": 8,
       "IconName": "crystal-rubber"
     },
@@ -12577,7 +12577,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 2333.0174856872768,
+      "TimeSpend": 2333.017485687277,
       "Proliferator": 8,
       "IconName": "titan-crystal"
     },
@@ -12630,7 +12630,7 @@
         1209
       ],
       "ItemCounts": [
-        0.0083333333333333332
+        0.008333333333333333
       ],
       "Results": [
         1126
@@ -12829,7 +12829,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 5735.1513588517537,
+      "TimeSpend": 5735.151358851754,
       "Proliferator": 8,
       "IconName": "gravity-lens"
     },
@@ -12913,7 +12913,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 5091.7087098401016,
+      "TimeSpend": 5091.708709840102,
       "Proliferator": 8,
       "IconName": "fusion-capacitor"
     },
@@ -12997,7 +12997,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 2831.7298143927078,
+      "TimeSpend": 2831.729814392708,
       "Proliferator": 8,
       "IconName": "fuel-thruster"
     },
@@ -13039,7 +13039,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 9994.3732359428468,
+      "TimeSpend": 9994.373235942847,
       "Proliferator": 8,
       "IconName": "ion-thruster"
     },
@@ -13085,7 +13085,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 6534.3334741467143,
+      "TimeSpend": 6534.333474146714,
       "Proliferator": 8,
       "IconName": "logistic-drone"
     },
@@ -13108,7 +13108,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 20200.605831521119,
+      "TimeSpend": 20200.60583152112,
       "Proliferator": 8,
       "IconName": "logistic-vessel"
     },
@@ -13131,7 +13131,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 4803.0871683645282,
+      "TimeSpend": 4803.087168364528,
       "Proliferator": 8,
       "IconName": "frame-material"
     },
@@ -13242,7 +13242,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 686.72590387567709,
+      "TimeSpend": 686.7259038756771,
       "Proliferator": 8,
       "IconName": "accelerator-1"
     },
@@ -13334,7 +13334,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 2245.7251399732709,
+      "TimeSpend": 2245.725139973271,
       "Proliferator": 8,
       "IconName": "bullet-titanium"
     },
@@ -13357,7 +13357,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 3671.8993425127051,
+      "TimeSpend": 3671.899342512705,
       "Proliferator": 8,
       "IconName": "bullet-alloy"
     },
@@ -13380,7 +13380,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 3137.6030176543809,
+      "TimeSpend": 3137.603017654381,
       "Proliferator": 8,
       "IconName": "cannonball"
     },
@@ -13403,7 +13403,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 5631.4909110934441,
+      "TimeSpend": 5631.490911093444,
       "Proliferator": 8,
       "IconName": "cannonball-cluster"
     },
@@ -13426,7 +13426,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 9419.2499412800153,
+      "TimeSpend": 9419.249941280015,
       "Proliferator": 8,
       "IconName": "cannonball-alloy"
     },
@@ -13564,7 +13564,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 4856.6103202605536,
+      "TimeSpend": 4856.610320260554,
       "Proliferator": 8,
       "IconName": "em-disturb"
     },
@@ -13587,7 +13587,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 6622.0577040788794,
+      "TimeSpend": 6622.057704078879,
       "Proliferator": 8,
       "IconName": "em-suppress"
     },
@@ -13633,7 +13633,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 6293.2087569702026,
+      "TimeSpend": 6293.208756970203,
       "Proliferator": 8,
       "IconName": "fighter-plasma"
     },
@@ -13702,7 +13702,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 31953.626064834491,
+      "TimeSpend": 31953.62606483449,
       "Proliferator": 8,
       "IconName": "warship-laser"
     },
@@ -13744,7 +13744,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 461.31105248547482,
+      "TimeSpend": 461.3110524854748,
       "Proliferator": 8,
       "IconName": "memory"
     },
@@ -13786,7 +13786,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 739.20190691104722,
+      "TimeSpend": 739.2019069110472,
       "Proliferator": 8,
       "IconName": "silicon-neuron"
     },
@@ -13870,7 +13870,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 811.90954715606563,
+      "TimeSpend": 811.9095471560656,
       "Proliferator": 8,
       "IconName": "negentropy"
     },
@@ -13977,7 +13977,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 941.45112091770238,
+      "TimeSpend": 941.4511209177024,
       "Proliferator": 8,
       "IconName": "belt-1"
     },
@@ -14000,7 +14000,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 2173.5161406183379,
+      "TimeSpend": 2173.516140618338,
       "Proliferator": 8,
       "IconName": "belt-2"
     },
@@ -14092,7 +14092,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 3153.7738190673158,
+      "TimeSpend": 3153.773819067316,
       "Proliferator": 8,
       "IconName": "inserter-3"
     },
@@ -14161,7 +14161,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 7884.7740201051338,
+      "TimeSpend": 7884.774020105134,
       "Proliferator": 8,
       "IconName": "piler"
     },
@@ -14207,7 +14207,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 6592.5096486219327,
+      "TimeSpend": 6592.509648621933,
       "Proliferator": 8,
       "IconName": "spray-coater"
     },
@@ -14253,7 +14253,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 2333.0174856872768,
+      "TimeSpend": 2333.017485687277,
       "Proliferator": 8,
       "IconName": "storage-1"
     },
@@ -14276,7 +14276,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 5261.5192573887853,
+      "TimeSpend": 5261.519257388785,
       "Proliferator": 8,
       "IconName": "storage-2"
     },
@@ -14345,7 +14345,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 8277.6104178037622,
+      "TimeSpend": 8277.610417803762,
       "Proliferator": 8,
       "IconName": "assembler-2"
     },
@@ -14391,7 +14391,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 26010.478735741821,
+      "TimeSpend": 26010.47873574182,
       "Proliferator": 8,
       "IconName": "assembler-4"
     },
@@ -14437,7 +14437,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 6011.5115317858581,
+      "TimeSpend": 6011.511531785858,
       "Proliferator": 8,
       "IconName": "charging-pole"
     },
@@ -14483,7 +14483,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 3085.3196113746362,
+      "TimeSpend": 3085.319611374636,
       "Proliferator": 8,
       "IconName": "wind-turbine"
     },
@@ -14506,7 +14506,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 4369.8027906719317,
+      "TimeSpend": 4369.802790671932,
       "Proliferator": 8,
       "IconName": "fuel-plant"
     },
@@ -14552,7 +14552,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 9798.0118119981053,
+      "TimeSpend": 9798.011811998105,
       "Proliferator": 8,
       "IconName": "geothermal-power-station"
     },
@@ -14713,7 +14713,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 9779.1696317471378,
+      "TimeSpend": 9779.169631747138,
       "Proliferator": 8,
       "IconName": "oil-extractor"
     },
@@ -14759,7 +14759,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 6423.0911051001176,
+      "TimeSpend": 6423.091105100118,
       "Proliferator": 8,
       "IconName": "chemical-plant"
     },
@@ -14805,7 +14805,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 6416.4911042902622,
+      "TimeSpend": 6416.491104290262,
       "Proliferator": 8,
       "IconName": "fractionator"
     },
@@ -14828,7 +14828,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 5205.4968396717386,
+      "TimeSpend": 5205.496839671739,
       "Proliferator": 8,
       "IconName": "solar-panel"
     },
@@ -14851,7 +14851,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 5828.0423960859134,
+      "TimeSpend": 5828.042396085913,
       "Proliferator": 8,
       "IconName": "accumulator"
     },
@@ -14920,7 +14920,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 5828.0423960859134,
+      "TimeSpend": 5828.042396085913,
       "Proliferator": 8,
       "IconName": "accumulator-full"
     },
@@ -14989,7 +14989,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 55599.511695781832,
+      "TimeSpend": 55599.51169578183,
       "Proliferator": 8,
       "IconName": "vertical-launching-silo"
     },
@@ -15035,7 +15035,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 39442.939278992271,
+      "TimeSpend": 39442.93927899227,
       "Proliferator": 8,
       "IconName": "hadron-collider"
     },
@@ -15058,7 +15058,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 42626.221638025527,
+      "TimeSpend": 42626.22163802553,
       "Proliferator": 8,
       "IconName": "fusion-reactor"
     },
@@ -15104,7 +15104,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 38507.657435243469,
+      "TimeSpend": 38507.65743524347,
       "Proliferator": 8,
       "IconName": "interstellar-logistic-station"
     },
@@ -15127,7 +15127,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 78398.879395548254,
+      "TimeSpend": 78398.87939554825,
       "Proliferator": 8,
       "IconName": "orbital-collector"
     },
@@ -15150,7 +15150,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 4610.2486798165246,
+      "TimeSpend": 4610.248679816525,
       "Proliferator": 8,
       "IconName": "lab"
     },
@@ -15196,7 +15196,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 4583.1127913891314,
+      "TimeSpend": 4583.112791389131,
       "Proliferator": 8,
       "IconName": "turret-gauss"
     },
@@ -15288,7 +15288,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 9204.0772608343214,
+      "TimeSpend": 9204.077260834321,
       "Proliferator": 8,
       "IconName": "turret-missile"
     },
@@ -15403,7 +15403,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 17413.968647319649,
+      "TimeSpend": 17413.96864731965,
       "Proliferator": 8,
       "IconName": "turret-plasma-ground"
     },
@@ -15495,7 +15495,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 6061.5252974286323,
+      "TimeSpend": 6061.525297428632,
       "Proliferator": 8,
       "IconName": "i-matrix"
     },
@@ -15587,7 +15587,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 6362.7907131090888,
+      "TimeSpend": 6362.790713109089,
       "Proliferator": 8,
       "IconName": "constrainring"
     },
@@ -15679,7 +15679,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 6283.1124684232791,
+      "TimeSpend": 6283.112468423279,
       "Proliferator": 8,
       "IconName": "photonprobeflipsmall"
     },
@@ -15725,7 +15725,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 33725.761503261689,
+      "TimeSpend": 33725.76150326169,
       "Proliferator": 8,
       "IconName": "iacomponent"
     },
@@ -15905,7 +15905,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 14937.743726186811,
+      "TimeSpend": 14937.74372618681,
       "Proliferator": 8,
       "IconName": "forceGen"
     },
@@ -15951,7 +15951,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 43287.099507922547,
+      "TimeSpend": 43287.09950792255,
       "Proliferator": 8,
       "IconName": "starcannoncompo"
     },
@@ -15974,7 +15974,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 63685.011032826384,
+      "TimeSpend": 63685.01103282638,
       "Proliferator": 8,
       "IconName": "rocketStarcannon"
     },
@@ -15997,7 +15997,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 2860.1663646136321,
+      "TimeSpend": 2860.166364613632,
       "Proliferator": 8,
       "IconName": "fractionator-1"
     },
@@ -16020,7 +16020,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 5601.5413889893853,
+      "TimeSpend": 5601.541388989385,
       "Proliferator": 8,
       "IconName": "fractionator-2"
     },
@@ -16043,7 +16043,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 5601.5413889893853,
+      "TimeSpend": 5601.541388989385,
       "Proliferator": 8,
       "IconName": "fractionator-3"
     },
@@ -16066,7 +16066,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 6416.4911042902622,
+      "TimeSpend": 6416.491104290262,
       "Proliferator": 8,
       "IconName": "fractionator-4"
     },
@@ -16089,7 +16089,7 @@
       "ResultCounts": [
         2
       ],
-      "TimeSpend": 9887.7627839731831,
+      "TimeSpend": 9887.762783973183,
       "Proliferator": 8,
       "IconName": "fractionator-5"
     },
@@ -17097,7 +17097,7 @@
       "GridIndex": 2307,
       "IconName": "water-pump",
       "WorkEnergyPerTick": 5000,
-      "Speed": 0.83333333333333337,
+      "Speed": 0.8333333333333334,
       "Space": 12.0
     },
     {

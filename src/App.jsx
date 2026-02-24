@@ -21,6 +21,8 @@ import {
     vanilla_game_version
 } from "./GameData.jsx";
 import {Select} from "antd";
+import {MiningSettings} from "./mining_settings.jsx";
+import {ResourceAnalysis} from "./ui_components/resource_analysis.jsx";
 
 function GameVersion({needs_list, set_needs_list}) {
     const mod_options = get_mod_options();
@@ -113,7 +115,7 @@ function GameVersion({needs_list, set_needs_list}) {
 
 function UserSettings({show}) {
     let class_show = show ? "" : "d-none";
-    return <div className={`d-flex gap-3 ${class_show}`}>
+    return <div className={`d-flex flex-column gap-3 ${class_show}`}>
         <fieldset>
             <legend><small>设置</small></legend>
             <Settings/>
@@ -125,6 +127,8 @@ function AppWithContexts() {
     const game_info = useContext(GameInfoContext);
     const [misc_show, set_misc_show] = useState(false);
     const [needs_list, set_needs_list] = useState({});
+    const [activeTab, setActiveTab] = useState('calc');
+
     useEffect(() => {
         set_needs_list({});
     }, [game_info]);
@@ -151,13 +155,38 @@ function AppWithContexts() {
                 采矿参数 & 其他设置
             </button>
         </div>
+        
+        {/* 原矿配置 (独立展示，不隐藏) */}
+        <div className="mt-2">
+            <MiningSettings />
+        </div>
+
         {/*采矿参数&其他设置*/}
         <UserSettings show={misc_show}/>
+
+        {/* Tabs */}
+        <ul className="nav nav-tabs mt-3">
+            <li className="nav-item">
+                <a className={`nav-link cursor-pointer ${activeTab === 'calc' ? 'active' : ''}`} onClick={() => setActiveTab('calc')}>
+                    量化计算
+                </a>
+            </li>
+            <li className="nav-item">
+                <a className={`nav-link cursor-pointer ${activeTab === 'analysis' ? 'active' : ''}`} onClick={() => setActiveTab('analysis')}>
+                    资源查看
+                </a>
+            </li>
+        </ul>
+
         {/*添加需求、批量预设、计算结果*/}
-        <div>
+        <div className={activeTab === 'calc' ? '' : 'd-none'}>
             <NeedsList needs_list={needs_list} set_needs_list={set_needs_list}/>
             <BatchSetting/>
             <Result needs_list={needs_list} set_needs_list={set_needs_list}/>
+        </div>
+        
+        <div className={activeTab === 'analysis' ? '' : 'd-none'}>
+            <ResourceAnalysis />
         </div>
     </>;
 }

@@ -1,5 +1,5 @@
 //import structuredClone from '@ungap/structured-clone';
-import {createContext, useState} from 'react';
+import {createContext, useEffect, useState} from 'react';
 import {GameInfo, GlobalState} from './global_state';
 import {init_scheme_data} from './scheme_data';
 import {default_game_data} from "./GameData.jsx";
@@ -13,6 +13,11 @@ export const SettingsSetterContext = createContext(null);
 export const GlobalStateContext = createContext(null);
 export const SettingsContext = createContext(null);
 export const GameInfoContext = createContext(null);
+
+const RARE_ORES = [
+    '硅石', '可燃冰', '分形硅石', '金伯利矿石', '刺笋结晶', '光栅石', '单极磁石', '氢', '有机晶体', '硫酸',
+    '木材', '植物燃料' // 无法自动化采集，默认禁用
+];
 
 const DEFAULT_SETTINGS = {
     mining_speed_oil: 3.0,
@@ -44,7 +49,10 @@ const DEFAULT_SETTINGS = {
     blue_buff: false,
 
     mineralize_list: [],
-    natural_production_line: []
+    natural_production_line: [],
+    
+    // New Settings for Level Calculation
+    disabled_ores: RARE_ORES, // List of disabled ore names
 };
 export const DefaultSettingsContext = createContext(DEFAULT_SETTINGS);
 
@@ -53,7 +61,27 @@ export function ContextProvider({children}) {
 
     const [scheme_data, set_scheme_data] = useState(init_scheme_data(default_game_data));
 
-    const [settings, set_settings] = useSetState(DEFAULT_SETTINGS);
+        const [settings, set_settings] = useSetState(() => {
+        try {
+            const storedSettings = localStorage.getItem('dsp-calc-settings');
+            if (storedSettings) {
+                // Merge with default settings to handle new/missing keys
+                return {...DEFAULT_SETTINGS, ...JSON.parse(storedSettings)};
+            }
+        } catch (e) {
+            console.error("Failed to parse settings from localStorage", e);
+        }
+        return DEFAULT_SETTINGS;
+    });
+
+    // Persist to localStorage on change
+    useEffect(() => {
+        try {
+            localStorage.setItem('dsp-calc-settings', JSON.stringify(settings));
+        } catch (e) {
+            console.error("Failed to save settings to localStorage", e);
+        }
+    }, [settings]);
 
     console.log("[+] new GlobalState");
     let global_state = new GlobalState(game_info, scheme_data, settings);

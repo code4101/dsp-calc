@@ -6,8 +6,9 @@ export function Header() {
     const version = import.meta.env.VITE_APP_VERSION;
     const renderTooltip = (props) => (
         <Tooltip id="qq-tooltip" {...props}>
-            联系作者QQ:653524123<br/>
-            加入QQ群反馈:816367922
+            原作者QQ: 653524123<br/>
+            原QQ群: 816367922<br/>
+            {/* 维护者QQ: 请在此填写 */}<br/>
         </Tooltip>
     );
     return (
@@ -19,10 +20,17 @@ export function Header() {
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarNav"/>
             <Navbar.Collapse id="navbarNav">
-                <Nav>
-                    <Nav.Link href="https://github.com/DSPCalculator/dsp-calc">开源仓库</Nav.Link>
-                    <Nav.Link href="https://www.bilibili.com/read/readlist/rl630834" target="_blank">逻辑原理</Nav.Link>
-                    <Nav.Link href="https://space.bilibili.com/16051534">联系作者</Nav.Link>
+                <Nav className="me-auto align-items-center">
+                    {/* 维护者信息 */}
+                    <Nav.Link href="#" className="fw-bold">本项目仓库</Nav.Link>
+                    
+                    <div className="vr mx-2 h-50 d-none d-lg-block"></div>
+                    <hr className="d-lg-none my-1"/>
+
+                    {/* 原作者信息 */}
+                    <Nav.Link href="https://github.com/DSPCalculator/dsp-calc" className="text-secondary">原开源仓库</Nav.Link>
+                    <Nav.Link href="https://www.bilibili.com/read/readlist/rl630834" target="_blank" className="text-secondary">逻辑原理</Nav.Link>
+                    <Nav.Link href="https://space.bilibili.com/16051534" className="text-secondary">原作者</Nav.Link>
                 </Nav>
                 <Nav>
                     <OverlayTrigger
@@ -31,13 +39,12 @@ export function Header() {
                         overlay={renderTooltip}
                     >
                         <Nav.Link href="#" className="d-flex align-items-center">
-                            <FaQq className="mr-1"/> QQ
+                            <FaQq className="me-1"/>QQ
                         </Nav.Link>
                     </OverlayTrigger>
                 </Nav>
-
                 <span className="navbar-text ms-auto small">
-                    <FaInfoCircle/> 若无法加载，尝试切换浏览器为Chrome/Edge
+                    <FaInfoCircle className="me-1"/> 若无法加载，尝试切换浏览器为Chrome/Edge
                 </span>
             </Navbar.Collapse>
         </Navbar>

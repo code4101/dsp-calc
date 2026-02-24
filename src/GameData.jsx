@@ -42,6 +42,10 @@ const data_index_modules = import.meta.glob('../data/*.json', {
     import: 'default',
     eager: true,
 });
+
+// Import recipe levels
+import recipeLevels from '../data/recipe_levels.json';
+
 const data_indices = Object.fromEntries(
     Object.entries(data_index_modules)
         .map(([module, data]) =>
@@ -152,6 +156,12 @@ export function get_game_data(modList) {
         return ret;
     }
 
+    // Include item type map for better ore detection
+    data.item_types = {};
+    json_data.items.forEach(function (item) {
+        data.item_types[item.Name] = item["Type"];
+    });
+
     let FactoriesArr = [];//存储所有可能的工厂类型
     json_data.recipes.forEach(function (recipe) {
         let 原料 = {};
@@ -179,12 +189,16 @@ export function get_game_data(modList) {
         }
         let 时间 = recipe.TimeSpend / 60.0;
         let 增产 = recipe.Proliferator;
+        let 级别 = recipeLevels[recipe.ID] || 0; // Get level from pre-calculated data
         data.recipe_data.push({
+            "名称": recipe.Name, // Include Name for cheat recipe detection
             "原料": 原料,
             "产物": 产物,
             "设施": 设施,
             "时间": 时间,
             "增产": 增产,
+            "级别": 级别,
+            "Type": recipe.Type,
         });
     })
     //data.factory_data

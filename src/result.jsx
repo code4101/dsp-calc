@@ -5,6 +5,7 @@ import {ItemIcon} from './icon';
 import {NplRows} from './natural_production_line';
 import {HorizontalMultiButtonSelect, Recipe} from './recipe';
 import {AutoSizedInput} from './ui_components/auto_sized_input.jsx';
+import {ProductionGraph} from './production_graph.jsx';
 
 const ValueWithDifference = ({currentValue, previousValue}) => {
     const global_state = useContext(GlobalStateContext);
@@ -500,7 +501,8 @@ export function Result({needs_list, set_needs_list}) {
         }
     }, [result_dict, energy_cost, miner_energy_cost, building_list]);
 
-    return <div className="my-3 d-flex gap-5">
+    return <div className="d-flex flex-column">
+        <div className="my-3 d-flex gap-5">
         {/* 结果表格 */}
         <table className="table table-sm align-middle w-auto result-table">
             <thead>
@@ -542,36 +544,7 @@ export function Result({needs_list, set_needs_list}) {
                 </fieldset>}
 
             {/* 原矿输入总需求 */}
-            {(() => {
-                const rawMaterials = Object.entries(result_dict).filter(([item]) => isRawMaterial(item));
-                return rawMaterials.length > 0 && (
-                    <fieldset className="w-fit">
-                        <legend><small>原矿输入总需求</small></legend>
-                        <table>
-                            <tbody>
-                                {rawMaterials.map(([item, amount]) => (
-                                    <tr key={item}>
-                                        <td className="d-flex align-items-center text-nowrap">
-                                            <ItemIcon item={item} tooltip={false} size={24}/>
-                                            <small className="ms-1">{item}</small>
-                                        </td>
-                                        <td className="ps-2 text-nowrap">
-                                            <small>
-                                                <ValueWithDifference
-                                                    currentValue={amount}
-                                                    previousValue={historyValues?.[1]?.rawMaterials?.[item]}
-                                                    key={`raw-material-${item}`}
-                                                />/{time_tick === 60 ? 'min' : 'sec'}
-                                            </small>
-                                        </td>
-                                    </tr>
-                                ))}
-                            </tbody>
-                        </table>
-                    </fieldset>
-                );
-            })()}
-
+            {/* 生产流程图已包含此信息，故移除 */}
 
             {building_rows.length > 0 &&
                 <>
@@ -601,5 +574,17 @@ export function Result({needs_list, set_needs_list}) {
                     </span>
                 </>}
         </div>
+    </div>
+    
+    <ProductionGraph 
+        result_dict={result_dict} 
+        item_graph={item_graph} 
+        mineralize_list={mineralize_list} 
+        game_data={game_data}
+        item_data={item_data}
+        scheme_data={scheme_data}
+        settings={settings}
+        side_products={side_products}
+    />
     </div>;
 }

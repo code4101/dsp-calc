@@ -1,7 +1,34 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import {ItemIcon} from './icon';
+import { GlobalStateContext } from './contexts';
 
 export function Recipe({recipe}) {
+    const global_state = useContext(GlobalStateContext);
+    
+    // Find recipe index to look up level
+    // This is a bit inefficient (O(N)), but recipe list is not huge in context of one render?
+    // Wait, global_state.game_data.recipe_data contains all recipes.
+    // The `recipe` prop passed here is an object reference from that array.
+    // So we can find its index by reference? Or maybe we should pass index/ID.
+    
+    // Better way: Let's assume the parent component passes the level or we find it.
+    // game_data.recipe_data is an array.
+    // Let's try to find the index.
+    
+    // Optimization: If recipe object has an ID or we can find it easily.
+    // Actually, in `GameData.jsx`, we are pushing objects to `recipe_data`.
+    // We added "级别" property to the object itself in the static version.
+    // BUT now we want DYNAMIC level.
+    // The `recipe` object in `game_data` is persistent.
+    // `global_state` is re-created when settings change?
+    // Let's check `contexts.jsx`: `global_state` is a new object when settings change.
+    // `global_state.recipe_levels` is what we want.
+    
+    // We need the index of this recipe in `game_data.recipe_data`.
+    // Since `recipe` is a reference to an object in that array, we can use `indexOf`.
+    let recipeIndex = global_state.game_data.recipe_data.indexOf(recipe);
+    let level = global_state.recipe_levels[recipeIndex];
+
     function findNonZeroPosition(num) {
         const numStr = num.toString();
         const dotIndex = numStr.indexOf('.');//1
@@ -33,8 +60,10 @@ export function Recipe({recipe}) {
     const output_doms = Object.entries(recipe["产物"]).map(item_to_doms);
     //时间向上取整，因为工厂也是向上取整
     const time = Math.ceil(recipe["时间"] * 100) / 100;
+    // const level = recipe["级别"]; // Use dynamic level instead
 
-    return <span className="d-inline-flex">
+    return <span className="d-inline-flex position-relative pe-4">
+        {level !== undefined && level >= 0 && <span className="position-absolute text-danger fw-bold font-monospace" style={{top: "-8px", right: "-8px", fontSize: "0.85em"}}>Lv.{level}</span>}
         {input_doms.length > 0 && <>
             {input_doms}
             <span className="me-1 position-relative"

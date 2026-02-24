@@ -4,17 +4,21 @@ function uniq(arr) {
     return Array.from(new Set(arr));
 }
 
+import {calculateRecipeLevels, extractPotentialOres} from './level_calculator';
+
 export class GameInfo {
     game_data;
     item_data;
     all_target_items;
     icon_grid;
+    potential_ores; // All possible ores
 
     constructor(game_data) {
         this.game_data = game_data;
         this.init_item_data();
         this.all_target_items = uniq(this.game_data.recipe_data.flatMap(recipe => Object.keys(recipe["产物"])));
         this.init_icon_layout();
+        this.potential_ores = extractPotentialOres(game_data);
     }
 
     init_icon_layout() {
@@ -86,6 +90,8 @@ export class GlobalState {
 
     item_list;
     key_item_list;
+    
+    recipe_levels; // Calculated dynamic levels
 
     constructor(game_info, scheme_data, settings) {
         console.log("mods", game_info.game_data.mods);
@@ -93,6 +99,16 @@ export class GlobalState {
         this.item_data = game_info.item_data;
         this.scheme_data = scheme_data;
         this.settings = settings;
+        
+        // Calculate Levels based on settings
+        // Re-calculate potential ores to ensure we have the latest definition (including BASE_ORES)
+        // This fixes issues where GameInfo might be stale in development/HMR scenarios
+        let potentialOres = extractPotentialOres(this.game_data);
+        let availableOres = new Set(potentialOres);
+        if (settings.disabled_ores && settings.disabled_ores.length > 0) {
+            settings.disabled_ores.forEach(ore => availableOres.delete(ore));
+        }
+        this.recipe_levels = calculateRecipeLevels(this.game_data, availableOres);
 
         //获取最后一个增产剂对应的点数值
         //懒得比较获取最大值了，直接用最后一个增产剂作为最大值
