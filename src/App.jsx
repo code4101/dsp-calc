@@ -20,7 +20,7 @@ import {
     TheyComeFromVoidGUID,
     vanilla_game_version
 } from "./GameData.jsx";
-import {Select} from "antd";
+import {Alert, Select} from "antd";
 import {MiningSettings} from "./mining_settings.jsx";
 import {ResourceAnalysis} from "./ui_components/resource_analysis.jsx";
 
@@ -142,6 +142,21 @@ function AppWithContexts() {
     }
 
     return <>
+        <div className="mb-2">
+            <Alert
+                message="code4101新增功能"
+                description={
+                    <ul style={{paddingLeft: '20px', margin: 0}}>
+                        <li><strong>流程图支持：</strong>新增产线流程图生成功能，可视化展示生产链路。</li>
+                        <li><strong>动态产线等级：</strong>原矿为Lv.0，基于此动态计算产物等级（Lv.1, Lv.2...）。等级随原矿配置实时更新，适应不同科技阶段。量化配方中可直接查看产线等级。</li>
+                        <li><strong>资源透视：</strong>在“资源查看”标签页，可按产线等级浏览资源及其上下游依赖。</li>
+                    </ul>
+                }
+                type="info"
+                showIcon
+                closable
+            />
+        </div>
         {/*游戏版本、模组选择*/}
         <div className="d-flex column-gap-4 row-gap-2 flex-wrap">
             <GameVersion needs_list={needs_list} set_needs_list={set_needs_list}/>
@@ -173,7 +188,7 @@ function AppWithContexts() {
             </li>
             <li className="nav-item">
                 <a className={`nav-link cursor-pointer ${activeTab === 'analysis' ? 'active' : ''}`} onClick={() => setActiveTab('analysis')}>
-                    资源查看
+                    产线脉络
                 </a>
             </li>
         </ul>

@@ -191,3 +191,6 @@ legend {
     border-color: var(--bs-form-invalid-border-color);
     outline-color: var(--bs-form-invalid-border-color);
 }
+.grayscale {
+    filter: grayscale(100%);
+}

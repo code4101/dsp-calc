@@ -1,7 +1,8 @@
-import React, {useContext, useState} from 'react';
+import React, {useContext, useState, useMemo} from 'react';
 import {GameInfoContext, GlobalStateContext, SettingsSetterContext, SchemeDataSetterContext} from './contexts';
 import {ItemIcon} from './icon';
 import {updateRecipeChoices} from './recipe_selector';
+import {sortItemsByGridIndex} from './utils';
 
 export function MiningSettings() {
     const game_info = useContext(GameInfoContext);
@@ -11,11 +12,17 @@ export function MiningSettings() {
     
     const [expanded, setExpanded] = useState(false);
     
-    const base_ores = ['铁矿', '铜矿', '煤矿', '石矿', '原油', '水', '木材', '植物燃料', '硅石', '钛石', '氢', '可燃冰', '分形硅石', '有机晶体', '金伯利矿石', '硫酸', '刺笋结晶', '光栅石', '单极磁石'];
-    const potential_ores = [
-        ...base_ores,
-        ...(game_info.potential_ores || []).filter(ore => !base_ores.includes(ore))
-    ];
+    const potential_ores = useMemo(() => {
+        const base_ores = ['铁矿', '铜矿', '煤矿', '石矿', '原油', '水', '木材', '植物燃料', '硅石', '钛石', '氢', '可燃冰', '分形硅石', '有机晶体', '金伯利矿石', '硫酸', '刺笋结晶', '光栅石', '单极磁石'];
+        const additional_ores = (game_info.potential_ores || []).filter(ore => !base_ores.includes(ore));
+        
+        // Combine and deduplicate
+        const combined = Array.from(new Set([...base_ores, ...additional_ores]));
+        
+        // Sort by GridIndex to match game UI order
+        return sortItemsByGridIndex(combined, game_info.game_data.item_grid);
+    }, [game_info.potential_ores, game_info.game_data.item_grid]);
+
     const disabled_ores = new Set(global_state.settings.disabled_ores || []);
     
     const toggleOre = (ore) => {

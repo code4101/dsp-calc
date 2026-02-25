@@ -5,8 +5,26 @@
 ![Contributors](https://img.shields.io/github/contributors/DSPCalculator/dsp-calc)
 ![GitHub Release](https://img.shields.io/github/v/release/DSPCalculator/dsp-calc)
 
+## ✨ code4101新增功能 (Extended Features)
+
+本项目在原版基础上进行了扩展，新增了以下核心特性：
+
+### 1. 产线等级系统 (Dynamic Tier System)
+- **等级定义**：引入产线等级概念。将**原矿**定义为 **Lv.0**，基于 Lv.0 能直接生产的资源为 **Lv.1**，基于 Lv.1 生产的为 **Lv.2**，以此类推。
+- **动态计算**：产线等级并非固定，而是根据当前配置的“可用原矿”动态计算。用户可以通过修改原矿配置（如模拟不同科技阶段），实时查看不同时期的产线层级变化。
+- **量化集成**：在量化计算的每个配方中，均可直观查看其对应的产线等级。
+
+### 2. 资源查看视图 (Resource Analysis)
+- 新增 **"资源查看"** 标签页。
+- 支持按 **产线等级** 分层浏览所有资源。
+- 提供清晰的 **上下游依赖** 物品查询，方便规划生产物流。
+
+### 3. 流程图功能 (Flowchart)
+- 集成产线流程图生成功能，可视化展示复杂的生产依赖关系。
+
 ## 在线使用方式
 
+- 新功能预览站: https://code4101.com/dsp/calculator
 - 主站 (Netlify) https://dsp-calc.pro/ &emsp;&emsp; 分支/PR预览 https://b.dsp-calc.pro/
 
 - Github Pages: https://dspcalculator.github.io/dsp-calc/

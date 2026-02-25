@@ -127,8 +127,8 @@ export function extractPotentialOres(game_data) {
     // 我们已经在 GameData.jsx 中添加了 item_types 映射
     if (game_data.item_types) {
         for (let item_name in game_data.item_types) {
-            // Type 1 usually means raw resources
-            if (game_data.item_types[item_name] === 1) {
+            // Type 1 usually means raw resources, Type 10 means Dark Fog drops
+            if (game_data.item_types[item_name] === 1 || game_data.item_types[item_name] === 10) {
                 potentialOres.add(item_name);
             }
         }

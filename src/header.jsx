@@ -22,7 +22,7 @@ export function Header() {
             <Navbar.Collapse id="navbarNav">
                 <Nav className="me-auto align-items-center">
                     {/* 维护者信息 */}
-                    <Nav.Link href="#" className="fw-bold">本项目仓库</Nav.Link>
+                    <Nav.Link href="https://github.com/code4101/dsp-calc" className="fw-bold">本项目仓库</Nav.Link>
                     
                     <div className="vr mx-2 h-50 d-none d-lg-block"></div>
                     <hr className="d-lg-none my-1"/>
@@ -39,7 +39,7 @@ export function Header() {
                         overlay={renderTooltip}
                     >
                         <Nav.Link href="#" className="d-flex align-items-center">
-                            <FaQq className="me-1"/>QQ
+                            <FaQq className="me-1"/>原作者QQ
                         </Nav.Link>
                     </OverlayTrigger>
                 </Nav>

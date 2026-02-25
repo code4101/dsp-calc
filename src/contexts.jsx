@@ -15,8 +15,8 @@ export const SettingsContext = createContext(null);
 export const GameInfoContext = createContext(null);
 
 const RARE_ORES = [
-    '硅石', '可燃冰', '分形硅石', '金伯利矿石', '刺笋结晶', '光栅石', '单极磁石', '氢', '有机晶体', '硫酸',
-    '木材', '植物燃料' // 无法自动化采集，默认禁用
+    '硅石', '可燃冰', '单极磁石', '氢', '有机晶体', '硫酸'
+    // '木材', '植物燃料', '金伯利矿石', '分形硅石', '光栅石', '刺笋结晶' // 用户反馈希望默认启用这些
 ];
 
 const DEFAULT_SETTINGS = {
@@ -65,8 +65,14 @@ export function ContextProvider({children}) {
         try {
             const storedSettings = localStorage.getItem('dsp-calc-settings');
             if (storedSettings) {
+                const parsed = JSON.parse(storedSettings);
+                // 自动启用用户反馈希望默认启用的矿物（针对老用户缓存的迁移逻辑）
+                if (parsed.disabled_ores) {
+                    const oresToEnable = ['木材', '植物燃料', '金伯利矿石', '分形硅石', '光栅石', '刺笋结晶'];
+                    parsed.disabled_ores = parsed.disabled_ores.filter(ore => !oresToEnable.includes(ore));
+                }
                 // Merge with default settings to handle new/missing keys
-                return {...DEFAULT_SETTINGS, ...JSON.parse(storedSettings)};
+                return {...DEFAULT_SETTINGS, ...parsed};
             }
         } catch (e) {
             console.error("Failed to parse settings from localStorage", e);
